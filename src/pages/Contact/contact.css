@@ -1,0 +1,62 @@
+body{
+    overflow-x: hidden;
+}
+#instagram{
+    width:115px;
+    height: 115px;
+}
+
+#githubico:hover{
+    border: 1px solid rgb(255, 0, 76);
+    border-radius: 50%;
+    transition: all .4s ease;
+}
+#tmeicon{
+    width: 100px;
+    height: 100px;
+}
+
+#tmeicon:hover{
+    border-radius: 50%;
+    border: 1px solid rgb(255, 0, 76);
+    transition: all .4s ease;
+}
+
+.contact{
+    height: 560px;
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+    align-items: center;
+    animation: showBlock 1s linear forwards;
+}
+
+.contact__items{
+ margin: 15px;
+ opacity: .7;
+ transition: all .2s ease-in-out;
+}
+
+.contact__items:hover{
+    opacity: 1;
+   transform: scale(1.1);
+}
+ 
+.supportwindow{
+    position: absolute;
+    right: -170px;
+    bottom: 0px;
+    opacity: .2;
+    transition: all .2s ease-in-out;
+}
+
+.supportwindow:hover{
+    opacity: 1;
+    right: 0px;
+}
+
+.supportwindow form{
+    display: flex;
+    flex-direction: column;
+}
+

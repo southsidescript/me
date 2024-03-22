@@ -1,0 +1,67 @@
+header,nav,aside,footer,main {
+    display:block;
+}
+
+.block{
+    display: block;
+    position: relative;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.none{
+    display: none;
+}
+
+*{
+    list-style-type: none;
+}
+
+ul{
+    padding-left: 0;
+}
+
+body{
+    margin:0;
+    background-color: black;
+}
+
+.backGroundTheme{
+    position: absolute;
+    left: calc(50% - 250px);
+    top: 100px;
+    width: 500px;
+    opacity: .4;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../../public/d.png);
+    animation: heart 4s ease-in-out infinite;
+}
+
+
+
+@keyframes heart {
+    0%{opacity: .4;}
+    50%{opacity:.7;
+        filter: contrast(200%); }
+    
+}
+
+
+
+
+
+.DARK{
+    background-color: black;
+    color:white
+}
+
+.LIGHT{
+    background-color: #e62b2b;
+    color: black;
+}
+

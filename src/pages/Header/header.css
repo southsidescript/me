@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+.header{
+     margin-top: 25px;
+     display: flex;
+     justify-content:space-evenly;
+     font-family: monospace;
+     margin-bottom: 200px;
+}
+
+
+header__nav__list-mod{
+
+}
+
+#header__logo-media{
+    z-index:1000;
+    display:none;
+    font-size:36px;
+    font-weight:500;
+    color: #00FEFC;
+    font-family:'Major Mono Display', monospace;
+}
+
+#header__nav-media{
+    z-index: 1000;
+    display: none;
+}
+
+
+#header__logo{
+    z-index: 1000;
+    font-size: 36px;
+    font-weight: 500;
+    color: #00FEFC;
+    font-family: 'Major Mono Display', monospace;
+} 
+
+a{
+text-decoration: none;
+color:#fff;
+}
+
+a:hover{
+    color: #7df9ff;
+    transition: all .2s ease-in;
+}
+
+a:hover{
+    color: rgb(0, 255, 242);
+    transition: all .2s ease-in;
+}
+
+
+
+#header__logo:hover{
+    opacity: 0.7;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+#dot{
+    color:#fff; 
+}
+#underline{
+    color:#FE59C2;
+    font-weight: bold;
+}
+.header__nav__list{
+    display: flex;
+   gap: 35px;
+}
+a{
+    scroll-behavior: smooth;
+}
+.nav__list-item{
+    position: relative;
+    font-size: 19px;
+    font-weight:500;
+    color:#fff;
+}
+
+
+
+.nav__list-item sup{
+    right: -5px;
+    top: -8px;
+    position: absolute;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+li a:hover{
+    cursor:none;
+}
+
+#header__logo:hover{
+ cursor:none
+}
+
+.header__nav-mod{
+    display: flex;
+    z-index: 2000;
+    justify-content: center;
+   padding-top: 25px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(129, 0, 39, 0.88);
+    animation: fade .5s 1;
+}
+
+@keyframes fade{
+    0%{
+          opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}

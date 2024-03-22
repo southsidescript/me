@@ -1,0 +1,15 @@
+.content_{
+ color:white;
+}
+
+.none{
+    display: none;
+}
+
+#none{
+    display: none;
+}
+
+.block{
+    display: block;
+}

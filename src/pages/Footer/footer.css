@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color:#000;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 8, 49);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+    height: 300px;
+}
+footer input::placeholder{
+    font-size: 12px;
+    opacity: .5;
+}
+.email{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(129, 0, 39, 0.88);
+    opacity: .5 ;
+    transition: all .5s ease;
+}
+.email:hover button{
+    animation-name: buttonhover;
+    animation-duration: var(--glitched-duration);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+.email:hover button::after{
+    animation-name: buttonhoverafter;
+  animation-duration: var(--glitched-duration);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.email:hover{
+ opacity: 1;
+}
+.email p{
+    width: 350px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+.otheroptions{
+    border-top: 1px solid #ff002b75;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50vw;
+    
+}
+.otheroptions:hover{
+  
+    transition: all .4s ease-in-out;
+}
+.otheroptions p{
+    padding-right: 25%;
+    color: #fff  ;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+    text-transform: uppercase;
+    width: 250px;
+    font-weight: bold;
+}
+.otheroptions span:hover{
+    cursor: pointer;
+}
+.otheroptions span{
+    animation: support 2s infinite;
+}
+@keyframes support {
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: rgb(255, 0, 21);
+    }
+    100%{
+        color: #fff;
+    }
+}
+
+
+.email input{
+    border-radius: 15px;
+    padding: 9px;
+    font-family: 'Roboto Mono';
+}
+
+.email input:focus{
+    color: red;
+}

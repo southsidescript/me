@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap');
+
+:root{
+
+  --arrow:20px;
+}
+
+@font-face {
+  font-family: 'Cyberpunk';
+  src: url(../../fonts/Cyberpunk-Regular.ttf);
+}
+html{
+  cursor: none;
+}
+
+
+#block{
+    display: block;
+}
+.main__body{
+    animation: showBlock 1s linear forwards;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center ;
+    padding-top: 100px;
+   
+}
+main h1{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 72px;
+    z-index:1000;
+}
+
+main p{
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 20px;
+    color:#fff;
+    position: relative;
+    
+}
+
+main #main__dev::before{
+    content: '>';
+    width: 7px;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 200px);
+    animation: opac .7s linear infinite;
+    
+}
+
+
+.expertise{
+    margin-top: 250px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+.expertise__icons{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
+}
+/*ICONS*/
+  #reactsvg{
+    width: 80px;
+    height: 80px;
+    opacity: .6;
+    animation: react  6s linear 0s normal none infinite running;
+    align-self: center;
+  }
+
+  #reduxsvg{
+    width: 60px;
+    height: 60px;
+    opacity: .6;
+  }
+
+.web__skills__icons img{
+  width: 80px;
+  height: 80px;
+
+}
+
+#figma{
+  animation: icondance 6s infinite;
+}
+
+.other img{
+  height: 80px;
+  width: 80px;
+}
+
+
+
+
+
+  .expertise__about{
+    position: relative;
+    width: 250px;
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -1px;
+  }
+
+  
+
+  .expertise__about h4::after{
+    content: '';
+    opacity: .4;
+    position: absolute;
+    left: 0;
+    top: 36%;
+    width: 197px;
+    height: 11px;
+    background-color: rgb(202, 2, 69);
+  }
+  .skills__map{
+    position: relative;
+  }
+  .skills__map::before{
+    content: '';
+    position: absolute;
+  left: 50%;
+  top: -20%;
+    width: 1px;
+    height: 1400px;
+    background-color: rgb(206, 39, 75);
+  }
+
+
+.expertise__about p{
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: 'Martian Mono', monospace;
+}
+
+
+#other_skills{
+  color: #fff;
+  font-size:  32px;
+}
+
+.web__skills{
+  color: #fff;
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: row-reverse;
+  margin: 150px auto 200px;
+  align-items: center;
+}
+
+.web__skills h4{
+  font-size: 28px;
+  font-family:'Poppins', sans-serif;
+  width: 200px;
+  text-transform: uppercase;
+}
+
+.web__skills p{
+  font-size: 16px;
+}
+
+.other{
+  margin-top: 200px;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  margin-top: 300px;
+}
+
+.other h4{
+  text-transform: uppercase;
+  font-size: 28px;
+  font-family:'Poppins',sans-serif;
+}
+
+/*CURSOR*/
+
+#cursor , #cursor_aura{
+  position: absolute;
+  /* transition: .5s cubic-bezier(.75,-1.28,.33,2.02) transform,.2s cubic-bezier(.75,-1.28,.33,2.02) opacity; */
+  user-select: none;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+a:hover{
+  transition: all .2s ease-in;
+}
+
+#cursor{
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.473);
+}
+
+#cursor_aura{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgb(255, 0, 21);
+  transition: all .3s ease-out ;
+  background-color:rgba(255, 0, 64, 0.021);
+  transform: translate(-12px, -12px);
+}
+
+
+/*MODS*/
+
+.on_mod{
+  animation: showBlock 2s 1;
+}
+.off_mod{
+  opacity: .1;
+}
+
+.right_mod{
+  animation: rightslide 2s 1;
+}
+
+.left_mod{
+  animation: leftslide 2s 1;
+}
+/*KEYFRAMES*/
+@keyframes leftslide{
+  0%{
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+@keyframes rightslide{
+  0%{opacity: 0;
+    transform: translateX(50px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes react{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{transform: rotate(360deg);}
+}
+
+
+@keyframes opac {
+  0%{opacity: .5;}
+  100%{opacity: 0;}
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes icondance {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(30deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}

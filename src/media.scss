@@ -1,0 +1,75 @@
+//max-width>>1200px
+@media (max-width:1200px) {
+    
+    .backGroundTheme{
+        left:calc(50% - 250px);
+    }
+}
+
+
+
+
+
+//max-width>>900px
+@media screen and (max-width:900px){
+   .header{
+    justify-content: space-between;
+}
+
+.backGroundTheme{
+    left: calc(50% - 250px);
+}
+
+//header
+
+
+.main h1{
+  font-size: 46px;
+}
+
+.main p{
+    font-size: 12px;
+}
+
+.header__nav{
+    display: none;
+}
+
+
+#header__nav-media{
+    display: block;
+}
+
+//icons
+.on_mod{
+    width: 50px !important;
+    height: 50px !important;
+}
+
+//footer
+
+    .footer{
+        display: flex;
+    }
+
+    .myworks__main img{
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    .mywork__logo div{
+        font-size:56px !important;
+        width: 0px;
+    }
+
+    .mywork{
+        padding-top: 100px;
+        gap: 50px;
+        text-align: center  ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100svw !important;
+    }
+
+}
